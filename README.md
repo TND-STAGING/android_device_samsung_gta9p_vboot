@@ -10,4 +10,4 @@ Build your first custom recovery from TeamWin Recovery Project.
 
 ## Credits
 - [cd-Crypton](https://github.com/cd-Crypton) who made this tree and wrote nearly all the code
-- [naden01](https://github.com/naden01) who fixed a build issue for vendor_boot
+- [nazephyrus](https://github.com/naden01) who fixed a build issue for vendor_boot
