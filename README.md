@@ -1,5 +1,5 @@
 ## TWRP tree for Samsung Galaxy Tab A9+ 5G (gta9p)
-this is an experiment, can you change a device with a recovery partition into a vendor_boot partition, i doubt it but @maxim-root wanted to try
+this is an experiment, can you change a device with a recovery partition into a vendor_boot partition, i doubt it but [Maxim](https://github.com/maxim-root) wanted to try
 
 
 # Clone
