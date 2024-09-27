@@ -48,7 +48,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_FLIPPED_SCREEN := true
 
 # Kernel
-BOARD_BOOT_HEADER_VERSION := 4
+BOARD_BOOT_HEADER_VERSION := 3
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0x04C8C000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=4e00000.dwc3 swiotlb=0 loop.max_part=7 cgroup.memory=nokmem,nosocket iptable_raw.raw_before_defrag=1 ip6table_raw.raw_before_defrag=1 firmware_class.path=/vendor/firmware_mnt/image
 BOARD_PAGE_SIZE := 4096
@@ -101,7 +101,7 @@ QCOM_BOARD_PLATFORMS += $(TARGET_BOARD_PLATFORM)
 
 # Recovery
 RECOVERY_SDCARD_ON_DATA := true
-#TARGET_RECOVERY_QCOM_RTC_FIX := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_USES_UEFI := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -164,11 +164,11 @@ TW_FORCE_KEYMASTER_VER := true
 #TW_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/prebuilt/modules)\")
 T#W_LOAD_VENDOR_MODULES := $(shell echo \"$(shell ls $(DEVICE_PATH)/prebuilt/modules/5.4-gki)\")
 TW_LOAD_VENDOR_BOOT_MODULES := true
-BOARD_RAMDISK_USE_LZ4 := true
+#BOARD_RAMDISK_USE_LZ4 := true
 TW_DEVICE_VERSION := TND_impossible
 
 # Vboot
-BOARD_USES_GENERIC_KERNEL_IMAGE := false
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
