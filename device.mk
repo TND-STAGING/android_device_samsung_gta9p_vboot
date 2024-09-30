@@ -67,12 +67,12 @@ PRODUCT_TARGET_VNDK_VERSION := 32
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.fuse.passthrough.enable=true
 
 # Copy modules for depmod
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,$(LOCAL_PATH)/prebuilt/modules,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules)  
+#PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,$(LOCAL_PATH)/prebuilt/modules,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules)  
 
 # Copy modules for depmod
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,$(LOCAL_PATH)/prebuilt/modules/5.4-gki,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/5.4-gki)
+#PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*.ko,$(LOCAL_PATH)/prebuilt/modules/5.4-gki,$(TARGET_COPY_OUT_RECOVERY)/root/vendor/lib/modules/5.4-gki)
 
 # A/B
-#AB_OTA_UPDATER := true
-#AB_OTA_PARTITIONS += \
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
     vendor_boot \

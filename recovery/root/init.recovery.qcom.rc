@@ -36,6 +36,7 @@ on init
 
 on boot
     start health-hal-2-1
+    start boot-hal-1-2
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
