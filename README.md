@@ -3,7 +3,7 @@ this is an experiment, can you change a device with a recovery partition into a 
 
 
 # Clone
-    git clone https://github.com/MFO-STAGING/android_device_samsung_gta9p_vboot.git -b test-decrypt device/samsung/gta9p
+    git clone https://github.com/TND-STAGING/android_device_samsung_gta9p_vboot.git -b test-decrypt device/samsung/gta9p
 
 # Build
     export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_gta9p-eng; mka vendorbootimage
