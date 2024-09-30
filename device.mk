@@ -6,6 +6,15 @@
 #
 LOCAL_PATH := device/samsung/gta9p
 
+# Configure Virtual A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Enable developer GSI keys
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 32
 
