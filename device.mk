@@ -32,13 +32,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+# Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-impl.recovery \
-    android.hardware.boot@1.0-service
-
-PRODUCT_PACKAGES += \
-    bootctrl.holi \
+    android.hardware.boot@1.1-impl-qti.recovery \
     bootctrl.holi.recovery
 
 # Recovery modules/dependencies
