@@ -31,8 +31,7 @@ on early-init
 
 
 on init
-    setprop prepdecrypt.setpatch true
-    start service vendor.modprobe  
+    setprop prepdecrypt.setpatch true  
 
 on boot
     start health-hal-2-1
@@ -55,12 +54,3 @@ on post-fs
 
 on post-fs-data
     mkdir /data/vendor/keymaster 0775 root root
-
-service vendor.modprobe /vendor/bin/vendor_modprobe.sh
-    class main
-    user root
-    group root root
-    disabled
-    stdio_to_kmsg
-    oneshot
-    seclabel u:r:recovery:s0
